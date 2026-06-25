@@ -1,0 +1,119 @@
+######## Spring Configuration ########
+
+server.port=8080
+
+
+######## Database Configuration #######
+spring.datasource.url=${DB_URL:jdbc:mysql://localhost:3307/est}
+
+spring.datasource.username=${DB_USERNAME:root}
+spring.datasource.password=${DB_PASSWORD:root}
+
+spring.output.ansi.enabled=ALWAYS
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+
+spring.jpa.properties.hibernate.format_sql=false
+ 
+ logging.level.org.springframework.security=DEBUG
+logging.level.com.es=INFO
+ 
+#If want to see very extensive logging
+#spring.jpa.properties.hibernate.generate_statistics=true
+#logging.level.org.hibernate.type=trace
+#logging.level.org.hibernate.stat=debug
+#=======
+#
+#logging.level.org.springframework.security=DEBUG
+#logging.level.com.es=INFO
+#>>>>>>> origin/master
+
+spring.servlet.multipart.enabled=true
+spring.servlet.multipart.file-size-threshold=2KB
+spring.servlet.multipart.max-file-size=500KB
+spring.servlet.multipart.max-request-size=500KB
+
+# All files uploaded through the REST API will be stored in this directory
+file.upload-dir=D:\\ET File\\
+mail.from=${MAIL_FROM:admin@baseliner.ai}
+mail.oauth.client-id=${MAIL_OAUTH_CLIENT_ID:9b4d5fc8-cb21-4f21-a451-4c3a4bf86313}
+mail.oauth.client-secret=${MAIL_OAUTH_CLIENT_SECRET:GCF8Q~PUMutB-j.3Oq3LoDtw1QvdpARMM~A7Uaeb}
+mail.oauth.tenant-id=${MAIL_OAUTH_TENANT_ID:0e94bb07-1b98-47ef-b69b-856aa2e42b64}
+#=======
+#file.upload-dir=${FILE_UPLOAD_DIR:D:\\ET File\\}
+#
+## Microsoft 365 OAuth2 SMTP config
+#mail.from=${MAIL_FROM:admin@baseliner.ai}
+#mail.oauth.client-id=${MAIL_OAUTH_CLIENT_ID:}
+#mail.oauth.client-secret=${MAIL_OAUTH_CLIENT_SECRET:}
+#mail.oauth.tenant-id=${MAIL_OAUTH_TENANT_ID:}
+#>>>>>>> origin/master
+
+mail.smtp.host=smtp.office365.com
+mail.smtp.port=587
+mail.smtp.auth=true
+mail.smtp.starttls.enable=true
+
+#REST API
+jira.base.url=https://domainId.atlassian.net
+jira.get.project.endpoint=/rest/agile/1.0/board/
+spring.mvc.view.prefix: /WEB-INF/view/
+spring.mvc.view.suffix: .jsp
+jira.update.property: https://domainId.atlassian.net/rest/api/3/issue/
+
+Ai.url=${AI_URL:http://157.20.190.17:8000/new/api/}
+#jira fields
+AiEstimate.field.name=Ai Estimate
+create.custom.field.Jira.url=https://domainId.atlassian.net/rest/api/3
+StoryPoints.field.name=Story Points
+originalEstimates.field.name=Original estimate
+#AI fields
+AI.response.field.aiEstimate=Ai_estimate
+AI.response.field.threePointEstimate=threePointEstimate
+AI.response.field.riskFactor=riskFactor
+AI.response.field.replaced=Replaced
+app.date.input.patterns=dd/MM/yyyy,dd-MM-yyyy
+app.date.output.pattern=MM/dd/yyyy
+
+app.secret.key=${APP_SECRET_KEY:estimation-tool-baseliner-secret-key-256bit}
+app.expiration.time=${JWT_EXPIRATION_MS:86400000}
+app.userdetails.access.key=${API_ACCESS_KEY:lskdjsdsdskdksjldsdlksldsj}
+
+jira.status.group.todo=To Do,Open,Backlog,Under Review,Review Ready,Under Approval,Under Approvel,Ready for Approval,Pending Approval
+jira.status.group.inprogress=In Progress,In Development,Working,Test Ready,Ready for QA,QA Ready,Ready for Testing,Testing,Under QA,QA,Accepted
+jira.status.group.done=Done,Completed,Closed,Complete,Resolved
+
+# azure devops status groups (used by JiraStatusResolver.resolve)
+azure.devops.status.group.todo=New, To Do,New,Backlog,Proposed
+azure.devops.status.group.inprogress=Active, In Progress,Active,Working,In Development
+azure.devops.status.group.done=Done,Completed,Closed,Resolved
+
+# Azure DevOps Integration Configuration
+azure.devops.api.version=7.0
+azure.devops.base.url=https://dev.azure.com
+azure.devops.timeout=30000
+
+# Monday.com Integration Configuration
+monday.base.url=https://api.monday.com/v2
+
+# Monday.com Status Mappings
+monday.status.group.todo=To Do,Backlog,New,Proposed,Ready to start,Not Started
+monday.status.group.inprogress=In Progress,Working,Working on it,In Development,Active,Stuck,In Review,Under Review,Testing,Waiting for review,In review
+monday.status.group.done=Done,Completed,Closed,Resolved,Finished
+
+azure.devops.workitemtype.mapping.Epic=Epic
+azure.devops.workitemtype.mapping.Feature=Feature
+azure.devops.workitemtype.mapping.UserStory=Story
+azure.devops.workitemtype.mapping.Task=Task
+azure.devops.workitemtype.mapping.Bug=Bug
+azure.devops.workitemtype.mapping.Issue=Bug
+azure.devops.workitemtype.mapping.TestCase=TestCase
+
+#server.ssl.enabled=true
+#server.ssl.key-store=/etc/ssl/clavrit/clavrit-ssl.p12
+#server.ssl.key-store-password=${SSL_KEY_STORE_PASSWORD:}
+#server.ssl.key-store-type=PKCS12
+#server.ssl.key-alias=baseliner_ssl

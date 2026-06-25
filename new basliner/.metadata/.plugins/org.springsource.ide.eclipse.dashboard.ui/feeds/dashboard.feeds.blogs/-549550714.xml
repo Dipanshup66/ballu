@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 24 Jun 2026 09:00:01 GMT</lastBuildDate><item><title><![CDATA[Spring Data 2025.0.13 released]]></title><link>https://spring.io/blog/2026/06/24/spring-data-2025-0-13-released</link><guid isPermaLink="true">https://spring.io/blog/2026/06/24/spring-data-2025-0-13-released</guid><dc:creator><![CDATA[mp911de]]></dc:creator><pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who contributed, I am pleased to announce the availability of Spring Data &lt;code&gt;2025.0.13&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This service release is expected to be the final open-source release of the Spring Data 3.5.x generation and contains regression fixes only.
+Please consider upgrading to the latest &lt;code&gt;4.0.x&lt;/code&gt; (&lt;code&gt;2025.1.x&lt;/code&gt; release train) or &lt;code&gt;4.1.x&lt;/code&gt; release at your earliest convenience.&lt;/p&gt;
+&lt;p&gt;Spring Boot 3.5.16 is scheduled to pick up this Spring Data release tomorrow.&lt;/p&gt;
+&lt;h2 id=&quot;2025013&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2025013&quot; aria-label=&quot;2025013 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2025.0.13&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Data Commons &lt;code&gt;3.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/reference/3.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/commons/reference/3.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-commons/releases/tag/3.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data JPA &lt;code&gt;3.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/reference/3.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/jpa/reference/3.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-jpa/releases/tag/3.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data MongoDB &lt;code&gt;4.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/reference/4.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/mongodb/reference/4.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-mongodb/releases/tag/4.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data for Apache Cassandra &lt;code&gt;4.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/reference/4.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/cassandra/reference/4.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-cassandra/releases/tag/4.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data KeyValue &lt;code&gt;3.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/reference/3.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/keyvalue/reference/3.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-keyvalue/releases/tag/3.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Neo4j &lt;code&gt;7.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/reference/7.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/neo4j/reference/7.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-neo4j/releases/tag/7.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data LDAP &lt;code&gt;3.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/reference/3.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/ldap/reference/3.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-ldap/releases/tag/3.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data REST &lt;code&gt;4.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/reference/4.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/rest/reference/4.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-rest/releases/tag/4.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Redis &lt;code&gt;3.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/reference/3.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/redis/reference/3.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-redis/releases/tag/3.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Elasticsearch &lt;code&gt;5.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/reference/5.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/elasticsearch/reference/5.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-elasticsearch/releases/tag/5.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Couchbase &lt;code&gt;5.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/reference/5.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/couchbase/reference/5.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-couchbase/releases/tag/5.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spring Data Relational &lt;code&gt;3.5.13&lt;/code&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/relational/reference/3.5/api/java/&quot;&gt;Javadoc&lt;/a&gt; - &lt;a href=&quot;https://docs.spring.io/spring-data/relational/reference/3.5/&quot;&gt;Documentation&lt;/a&gt; - &lt;a href=&quot;https://github.com/spring-projects/spring-data-relational/releases/tag/3.5.13&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Self-Correcting Structured Output in Spring AI 2.0]]></title><link>https://spring.io/blog/2026/06/23/spring-ai-self-correcting-structured-output</link><guid isPermaLink="true">https://spring.io/blog/2026/06/23/spring-ai-self-correcting-structured-output</guid><dc:creator><![CDATA[tzolov]]></dc:creator><pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Large language models are text-in, text-out systems — their interface is natural language.
+&lt;img style=&quot;display: block; margin: 1px auto; padding: 7px;&quot; src=&quot;https://raw.githubusercontent.com/spring-io/spring-io-static/refs/heads/main/blog/tzolov/20260622/structured-output-logo.png&quot; width=&quot;400&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Natural language is a great interface for humans and a poor one for software. The moment downstream code needs to route on a field, persist a value, or branch on a result, the conversation has to become a record. &lt;strong&gt;Structured output&lt;/strong&gt; bridges that gap. The model is steered to produce text conforming to a schema; the application parses it back into a typed object the rest of the codebase can treat like any other domain type.&lt;/p&gt;
+&lt;p&gt;Spring AI has supported structured output since day one through &lt;code&gt;ChatClient.call().entity(...)&lt;/code&gt;. Spring AI 2.0 adds two new dials to it — &lt;strong&gt;provider-native structured output&lt;/strong&gt; and &lt;strong&gt;self-correcting schema validation&lt;/strong&gt;. Defaults are unchanged, so existing code keeps working.&lt;/p&gt;
+&lt;p&gt;This post walks through structured output, starting with a simple, working case first, then add reliability piece by piece.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;typed-response&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#typed-response&quot; aria-label=&quot;typed response permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Typed Response&lt;/h2&gt;
+&lt;p&gt;Define a Java record for the shape you want back:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;record ActorsFilms(String actor, List&amp;#x3C;String&gt; movies) {}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ask &lt;code&gt;ChatClient&lt;/code&gt; to populate it. Instead of finishing the call with &lt;code&gt;.content()&lt;/code&gt; — which returns the raw text reply — finish with &lt;code&gt;.entity(...)&lt;/code&gt; and pass your target type:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ActorsFilms films = chatClient.prompt()
+    .user(&quot;Generate the filmography for a random actor.&quot;)
+    .call()
+    .entity(ActorsFilms.class);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That&apos;s it. The result is a typed &lt;code&gt;ActorsFilms&lt;/code&gt; you can pass to the rest of your code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;System.out.println(films.actor());     // &quot;Tom Hanks&quot;
+System.out.println(films.movies());    // [&quot;Forrest Gump&quot;, &quot;Cast Away&quot;, ...]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;.entity(...)&lt;/code&gt; is &lt;code&gt;.call()&lt;/code&gt;-only.&lt;/strong&gt; Typed parsing requires the complete response, so it isn&apos;t available on the streaming path (&lt;code&gt;.stream()&lt;/code&gt; returns text chunks, not typed objects). This applies to every variant covered below — &lt;code&gt;Class&lt;/code&gt;, &lt;code&gt;ParameterizedTypeReference&lt;/code&gt;, custom converter, with or without the new dials.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Behind the scenes, Spring AI did three things: a &lt;strong&gt;schema generator&lt;/strong&gt; turned your &lt;code&gt;ActorsFilms&lt;/code&gt; record into a JSON schema, that schema was appended to the prompt&apos;s system context, and the model&apos;s JSON answer was then handed to a &lt;strong&gt;type converter&lt;/strong&gt; that parsed it back into your record.&lt;/p&gt;
+&lt;img style=&quot;display: block; margin: 1px auto; padding: 7px;&quot; src=&quot;https://raw.githubusercontent.com/spring-io/spring-io-static/refs/heads/main/blog/tzolov/20260622/structured-output-basic.png&quot; width=&quot;800&quot;&gt;
+&lt;p&gt;This works on every model Spring AI supports — there&apos;s nothing provider-specific about it.&lt;/p&gt;
+&lt;p&gt;It also has no guarantees. The model is &lt;em&gt;asked&lt;/em&gt; to produce JSON matching the schema, not &lt;em&gt;forced&lt;/em&gt; to. Most of the time it complies. Sometimes it doesn&apos;t — it returns an extra field, omits a required one, or wraps the JSON in prose. When that happens, the parser throws.&lt;/p&gt;
+&lt;p&gt;The next two sections fix that, one approach at a time.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;adding-a-safety-net-validateschema&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#adding-a-safety-net-validateschema&quot; aria-label=&quot;adding a safety net validateschema permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adding a Safety Net: &lt;code&gt;validateSchema()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The simplest way to handle malformed output is to detect it and retry. Spring AI 2.0 does this automatically with a single switch:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ActorsFilms films = chatClient.prompt()
+    .user(&quot;Generate the filmography for a random actor.&quot;)
+    .call()
+    .entity(ActorsFilms.class, spec -&gt; spec.validateSchema());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;spec -&gt; spec.validateSchema()&lt;/code&gt; consumer turns on a self-correcting retry loop:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The model responds.&lt;/li&gt;
+&lt;li&gt;Spring AI validates the response against the schema for &lt;code&gt;ActorsFilms&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If validation passes, you get your typed record back.&lt;/li&gt;
+&lt;li&gt;If it fails, the validation error (&quot;missing required field &lt;code&gt;actor&lt;/code&gt;&quot;, &quot;expected &lt;code&gt;array&lt;/code&gt;, got &lt;code&gt;string&lt;/code&gt;&quot;) is appended to the user prompt, and the call is re-issued — up to 3 attempts by default.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The model sees the &lt;em&gt;specific&lt;/em&gt; error on each retry. The second attempt isn&apos;t a blind re-try; the model knows what was wrong and can correct it.&lt;/p&gt;
+&lt;img style=&quot;display: block; margin: 1px auto; padding: 7px;&quot; src=&quot;https://raw.githubusercontent.com/spring-io/spring-io-static/refs/heads/main/blog/tzolov/20260622/structured-output-self-correction.png&quot; width=&quot;800&quot;&gt;
+&lt;p&gt;This is powered by &lt;code&gt;StructuredOutputValidationAdvisor&lt;/code&gt;, a &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/advisors-recursive.html&quot;&gt;recursive advisor&lt;/a&gt; that&apos;s auto-registered when you call &lt;code&gt;validateSchema()&lt;/code&gt;. You don&apos;t have to wire anything; the switch is the entire configuration.&lt;/p&gt;
+&lt;h5 id=&quot;customizing-the-advisor&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#customizing-the-advisor&quot; aria-label=&quot;customizing the advisor permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Customizing the advisor&lt;/h5&gt;
+&lt;p&gt;&lt;code&gt;StructuredOutputValidationAdvisor&lt;/code&gt; defaults to &lt;strong&gt;3 retry attempts&lt;/strong&gt; and uses Spring AI&apos;s default &lt;code&gt;JsonMapper&lt;/code&gt;. To customize — for example, more attempts, a pre-supplied schema, or a different mapper — build your own instance and register it on the &lt;code&gt;ChatClient&lt;/code&gt;. An explicitly registered advisor replaces the auto-registered one:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;var validationAdvisor = StructuredOutputValidationAdvisor.builder()
+    .outputType(ActorsFilms.class)
+    .maxRepeatAttempts(5)
+    .build();
+
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultAdvisors(validationAdvisor)
+    .build();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;adding-upstream-guarantees-useproviderstructuredoutput&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#adding-upstream-guarantees-useproviderstructuredoutput&quot; aria-label=&quot;adding upstream guarantees useproviderstructuredoutput permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adding Upstream Guarantees: &lt;code&gt;useProviderStructuredOutput()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;validateSchema()&lt;/code&gt; is a &lt;em&gt;response-side&lt;/em&gt; safety net — it catches bad output after the fact and retries. The complementary approach is a &lt;em&gt;request-side&lt;/em&gt; constraint: tell the model&apos;s provider, at the API level, that the response must conform to a schema. Most modern providers support this (OpenAI&apos;s Structured Outputs, Anthropic&apos;s structured output extension, Gemini&apos;s &lt;code&gt;responseSchema&lt;/code&gt;, Mistral&apos;s &lt;code&gt;response_format&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Spring AI exposes it portably with another switch on the same consumer:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ActorsFilms films = chatClient.prompt()
+    .user(&quot;Generate the filmography for a random actor.&quot;)
+    .call()
+    .entity(ActorsFilms.class, spec -&gt; spec.useProviderStructuredOutput());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What changes at the wire level:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The system prompt no longer carries a JSON format instruction (cleaner, fewer tokens).&lt;/li&gt;
+&lt;li&gt;The schema is sent to the provider as an API-level field.&lt;/li&gt;
+&lt;li&gt;The provider&apos;s runtime enforces conformance — invalid responses can&apos;t be emitted at all.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supported providers as of 2.0: &lt;strong&gt;OpenAI&lt;/strong&gt;, &lt;strong&gt;Anthropic&lt;/strong&gt;, &lt;strong&gt;Google GenAI&lt;/strong&gt; , &lt;strong&gt;Mistral AI&lt;/strong&gt;, &lt;strong&gt;Ollama&lt;/strong&gt; (model-specific). The same &lt;code&gt;.useProviderStructuredOutput()&lt;/code&gt; call works regardless of which is wired in.&lt;/p&gt;
+&lt;p&gt;Spring AI detects support by checking whether the model&apos;s chat options implement the &lt;code&gt;StructuredOutputChatOptions&lt;/code&gt; interface. If not, the flag is silently ignored and the call falls back to the prompt-based default.&lt;/p&gt;
+&lt;h4 id=&quot;why-its-off-by-default&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#why-its-off-by-default&quot; aria-label=&quot;why its off by default permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why it&apos;s off by default&lt;/h4&gt;
+&lt;p&gt;Compatibility. Older or non-supporting models would reject the request, and the prompt-based default works everywhere. A few known limitations are worth mentioning even on supported providers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Partial JSON Schema support.&lt;/strong&gt; Native structured output support is often &lt;em&gt;partial&lt;/em&gt; — even on providers that advertise the feature, the accepted JSON Schema surface varies. &lt;code&gt;$ref&lt;/code&gt;, deeply nested arrays, &lt;code&gt;allOf&lt;/code&gt;/&lt;code&gt;anyOf&lt;/code&gt;/&lt;code&gt;oneOf&lt;/code&gt;, regex patterns, and recursive types are common limitations. The shape drift this can cause is exactly what &lt;code&gt;validateSchema()&lt;/code&gt; (next section) is good at catching.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ollama with reasoning (&quot;thinking&quot;) models&lt;/strong&gt; — variants like &lt;code&gt;qwen&lt;/code&gt; may emit their internal reasoning trace as plain text instead of JSON, causing parse errors. Use a non-reasoning model, or combine native output with &lt;code&gt;validateSchema()&lt;/code&gt; so misbehaving responses are retried.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OpenAI doesn&apos;t accept top-level arrays&lt;/strong&gt; in its Structured Outputs API. Wrap a list in a container record before requesting it natively (&lt;code&gt;record FilmographyList(List&amp;#x3C;ActorsFilms&gt; films) {}&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;combining-both&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#combining-both&quot; aria-label=&quot;combining both permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Combining Both&lt;/h2&gt;
+&lt;p&gt;The two switches solve different problems and compose naturally:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ActorsFilms films = chatClient.prompt()
+    .user(&quot;Generate the filmography for a random actor.&quot;)
+    .call()
+    .entity(ActorsFilms.class, spec -&gt; spec
+        .useProviderStructuredOutput()
+        .validateSchema());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;useProviderStructuredOutput()&lt;/code&gt; minimizes the chance of malformed output by constraining the model at the API level. &lt;code&gt;validateSchema()&lt;/code&gt; catches the residual cases — provider edge cases, the Ollama reasoning quirk above — and corrects them automatically.&lt;/p&gt;
+&lt;p&gt;Reach for both when downstream code can&apos;t tolerate shape drift — when a missing field or wrong type would corrupt state, throw later, or silently misroute.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;generic-types-lists-maps-and-beyond&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#generic-types-lists-maps-and-beyond&quot; aria-label=&quot;generic types lists maps and beyond permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Generic Types: Lists, Maps, and Beyond&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;.entity(Class)&lt;/code&gt; is for concrete classes. For generic types — &lt;code&gt;List&amp;#x3C;ActorsFilms&gt;&lt;/code&gt;, &lt;code&gt;Map&amp;#x3C;String, ActorsFilms&gt;&lt;/code&gt; — use &lt;code&gt;ParameterizedTypeReference&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;List&amp;#x3C;ActorsFilms&gt; films = chatClient.prompt()
+    .user(&quot;Generate filmographies for three random actors.&quot;)
+    .call()
+    .entity(new ParameterizedTypeReference&amp;#x3C;List&amp;#x3C;ActorsFilms&gt;&gt;() {});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The same &lt;code&gt;EntityParamSpec&lt;/code&gt; consumer works:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;List&amp;#x3C;ActorsFilms&gt; films = chatClient.prompt()
+    .user(&quot;Generate filmographies for three random actors.&quot;)
+    .call()
+    .entity(new ParameterizedTypeReference&amp;#x3C;List&amp;#x3C;ActorsFilms&gt;&gt;() {},
+            spec -&gt; spec.validateSchema());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One thing to watch out for: OpenAI&apos;s Structured Outputs API doesn&apos;t accept a top-level array. If you combine &lt;code&gt;List&amp;#x3C;...&gt;&lt;/code&gt; with &lt;code&gt;.useProviderStructuredOutput()&lt;/code&gt; on OpenAI, the call will fail. The fix is a one-line wrapper record:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;record FilmographyList(List&amp;#x3C;ActorsFilms&gt; films) {}
+
+FilmographyList result = chatClient.prompt()
+    .user(&quot;Generate filmographies for three random actors.&quot;)
+    .call()
+    .entity(FilmographyList.class, spec -&gt; spec.useProviderStructuredOutput());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The default prompt-based flow has no such restriction — top-level arrays work fine without &lt;code&gt;useProviderStructuredOutput()&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;getting-the-full-response&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-full-response&quot; aria-label=&quot;getting the full response permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Full Response&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;.entity(...)&lt;/code&gt; returns only the parsed object. If you also need the underlying &lt;code&gt;ChatResponse&lt;/code&gt; — for token usage, observability metadata, or anything beyond the entity — use &lt;code&gt;.responseEntity(...)&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ResponseEntity&amp;#x3C;ChatResponse, ActorsFilms&gt; result = chatClient.prompt()
+    .user(&quot;Generate the filmography for a random actor.&quot;)
+    .call()
+    .responseEntity(ActorsFilms.class);
+
+ActorsFilms films = result.entity();
+ChatResponse raw = result.response();
+long totalTokens = raw.getMetadata().getUsage().getTotalTokens();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It has the same overload set as &lt;code&gt;.entity(...)&lt;/code&gt; — &lt;code&gt;Class&lt;/code&gt;, &lt;code&gt;ParameterizedTypeReference&lt;/code&gt;, and the &lt;code&gt;EntityParamSpec&lt;/code&gt; consumer all apply.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;when-the-built-ins-arent-enough&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#when-the-built-ins-arent-enough&quot; aria-label=&quot;when the built ins arent enough permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;When the Built-ins Aren&apos;t Enough&lt;/h2&gt;
+&lt;p&gt;The built-in &lt;code&gt;BeanOutputConverter&lt;/code&gt; is strict: it expects the model&apos;s response to be parseable JSON, full stop. But models often wrap their JSON in markdown code fences:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Here&apos;s the filmography:
+```json
+{ &quot;actor&quot;: &quot;Tom Hanks&quot;, &quot;movies&quot;: [&quot;Forrest Gump&quot;, &quot;Cast Away&quot;] }
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;BeanOutputConverter&lt;/code&gt; will throw on the first &lt;code&gt;H&lt;/code&gt; of &quot;Here&apos;s&quot;. The common fix is a custom converter that strips fences and extracts the JSON before delegating to the default parser:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class LenientJsonOutputConverter&amp;#x3C;T&gt; implements StructuredOutputConverter&amp;#x3C;T&gt; {
+
+    private static final Pattern FENCE = Pattern.compile(&quot;```(?:json)?\\s*([\\s\\S]*?)```&quot;);
+
+    private final BeanOutputConverter&amp;#x3C;T&gt; delegate;
+
+    public LenientJsonOutputConverter(Class&amp;#x3C;T&gt; targetType) {
+        this.delegate = new BeanOutputConverter&amp;#x3C;&gt;(targetType);
+    }
+
+    @Override public String getFormat()     { return delegate.getFormat(); }
+    @Override public String getJsonSchema() { return delegate.getJsonSchema(); }
+
+    @Override
+    public T convert(String source) {
+        var matcher = FENCE.matcher(source);
+        String json = matcher.find() ? matcher.group(1).trim() : source.trim();
+        return delegate.convert(json);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pass it to &lt;code&gt;.entity(...)&lt;/code&gt; instead of a &lt;code&gt;Class&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ActorsFilms films = chatClient.prompt()
+    .user(&quot;Generate the filmography for a random actor.&quot;)
+    .call()
+    .entity(new LenientJsonOutputConverter&amp;#x3C;&gt;(ActorsFilms.class));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because this converter delegates &lt;code&gt;getJsonSchema()&lt;/code&gt; to the underlying &lt;code&gt;BeanOutputConverter&lt;/code&gt;, both new dials still work — &lt;code&gt;validateSchema()&lt;/code&gt; and &lt;code&gt;useProviderStructuredOutput()&lt;/code&gt; operate against the same schema the default converter would use. You get resilient parsing plus self-correction with no extra wiring.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;The role of &lt;code&gt;getJsonSchema()&lt;/code&gt;.&lt;/strong&gt; Added in 2.0 as a default method on &lt;code&gt;StructuredOutputConverter&lt;/code&gt;, &lt;code&gt;getJsonSchema()&lt;/code&gt; is the bridge that lets a converter participate in &lt;code&gt;useProviderStructuredOutput()&lt;/code&gt; and &lt;code&gt;validateSchema()&lt;/code&gt;. Implement it to return your schema (typically by delegating to a &lt;code&gt;BeanOutputConverter&lt;/code&gt;) and the new dials work; leave it at the default and both dials become no-ops for that converter.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;non-json-formats&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#non-json-formats&quot; aria-label=&quot;non json formats permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Non-JSON formats&lt;/h3&gt;
+&lt;p&gt;For formats outside JSON&apos;s reach — YAML for config generators, CSV for data extraction — implement &lt;code&gt;StructuredOutputConverter&lt;/code&gt; from scratch: write your own &lt;code&gt;getFormat()&lt;/code&gt; prompt and your own &lt;code&gt;convert(...)&lt;/code&gt; parser. Leave &lt;code&gt;getJsonSchema()&lt;/code&gt; at its default, and both new dials sit out — the prompt-based path runs as it does for the built-ins.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;cheat-sheet&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cheat-sheet&quot; aria-label=&quot;cheat sheet permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cheat Sheet&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;You need&lt;/th&gt;
+&lt;th&gt;Use&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Default — works on every provider&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.entity(Type.class)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Generic types like &lt;code&gt;List&amp;#x3C;T&gt;&lt;/code&gt;, &lt;code&gt;Map&amp;#x3C;K,V&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.entity(new ParameterizedTypeReference&amp;#x3C;...&gt;() {})&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Don&apos;t fail on malformed output&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.entity(Type.class, spec -&gt; spec.validateSchema())&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Stronger upstream guarantees from the provider&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.entity(Type.class, spec -&gt; spec.useProviderStructuredOutput())&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Both — request constraint + response retry&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.entity(Type.class, spec -&gt; spec.useProviderStructuredOutput().validateSchema())&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Token usage / metadata alongside the entity&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.responseEntity(...)&lt;/code&gt; (same overloads)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Model wraps JSON in markdown fences, or non-JSON format&lt;/td&gt;
+&lt;td&gt;Implement &lt;code&gt;StructuredOutputConverter&amp;#x3C;T&gt;&lt;/code&gt; and pass it to &lt;code&gt;.entity(...)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Streaming responses&lt;/td&gt;
+&lt;td&gt;Not supported — &lt;code&gt;.entity(...)&lt;/code&gt; is &lt;code&gt;.call()&lt;/code&gt;-only; &lt;code&gt;.stream()&lt;/code&gt; returns text chunks, not typed objects&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;wrapping-up&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#wrapping-up&quot; aria-label=&quot;wrapping up permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wrapping Up&lt;/h2&gt;
+&lt;p&gt;Structured output in Spring AI 2.0 is the same &lt;code&gt;.entity(...)&lt;/code&gt; call you already know, with two new switches: &lt;code&gt;validateSchema()&lt;/code&gt; for response-side self-correction, &lt;code&gt;useProviderStructuredOutput()&lt;/code&gt; for request-side enforcement. Each is independently useful; together they constrain the request and self-correct the response. Existing code keeps working unchanged; new code can opt in per call without rewiring the application.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#references&quot; aria-label=&quot;references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/structured-output-converter.html&quot;&gt;Structured Output Converter Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chatclient.html&quot;&gt;ChatClient Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/advisors-recursive.html&quot;&gt;Recursive Advisors Reference&lt;/a&gt; — covers &lt;code&gt;StructuredOutputValidationAdvisor&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://spring.io/blog/2026/06/15/spring-ai-composable-tool-calling&quot;&gt;Tool Calling in Spring AI 2.0&lt;/a&gt; — companion piece; tool input schemas use the same generator&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://json-schema.org/specification-links#2020-12&quot;&gt;JSON Schema Specification 2020-12&lt;/a&gt; — the schema dialect Spring AI generates against&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[This Week in Spring - June 23rd, 2026]]></title><link>https://spring.io/blog/2026/06/23/this-week-in-spring-june-23-2026</link><guid isPermaLink="true">https://spring.io/blog/2026/06/23/this-week-in-spring-june-23-2026</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi Spring fans! In this installment, we look at the wide and wonderful world of Spring, as usual, and there&apos;s a good amount to get to, fresh off the recent Spring Boot 4.1 generation release train, so let&apos;s dive right into it!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I wrote a blog post looking at &lt;a href=&quot;https://spring.io/blog/2026/06/21/spring-boot-41-and-spring-batch&quot;&gt;Spring Batch, MongoDB, and Spring Boot 4.1&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Spring AI lead &lt;a href=&quot;https://spring.io/blog/2026/06/15/spring-ai-composable-tool-calling&quot;&gt;Christian Tsolov wrote a nice post detailing the new tool calling API in Spring AI 2.0&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;In last week&apos;s installment of &lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to my friend DaShaun Carter about the latest in &lt;a href=&quot;https://spring.io/blog/2026/06/18/a-bootiful-podcast-dashaun-carter&quot;&gt;the new Spring Boot 4.1 releases&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Another great &lt;a href=&quot;https://www.linkedin.com/pulse/spring-ai-recipe-using-elevenlabs-voices-craig-walls-zn7uc/&quot;&gt;Spring AI recipe from Craig Walls&lt;/a&gt;, this one looking at voice control using ElevenLabs.&lt;/li&gt;
+&lt;li&gt;Now reading! Building &lt;a href=&quot;https://medium.com/@meryemarroussi/ai-powered-trading-assistant-with-spring-ai-and-binance-api-4bd444a4bbfb&quot;&gt;an AI-powered trading assistant with Spring AI and Binance API&lt;/a&gt; (No idea if this is a good idea!).&lt;/li&gt;
+&lt;li&gt;The latest and greatest &lt;a href=&quot;https://www.infoq.com/news/2026/06/spring-news-roundup-jun08-2026/&quot;&gt;in the Spring community, written up masterfully by InfoQ&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Speaking of, InfoQ also wrote up the new Spring Boot 4.1 release](&lt;a href=&quot;https://www.infoq.com/news/2026/06/spring-boot-4-1/&quot;&gt;https://www.infoq.com/news/2026/06/spring-boot-4-1/&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;I love this Spring Cloud Stream externalization &lt;a href=&quot;https://github.com/ZenWave360/spring-modulith-events-spring-cloud-stream&quot;&gt;module that integrates with Spring Modulith&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;InfoQ&apos;s awesome coverage of the &lt;a href=&quot;https://www.infoq.com/news/2026/06/spring-news-roundup-jun08-2026/&quot;&gt;latest and greatest in Spring continues to be awesome, as usual&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Check out the new ever-concise release &lt;a href=&quot;https://spring.io/projects/release-highlights&quot;&gt;notes on Spring Boot 4.1&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;I love Craig Walls&apos; &lt;a href=&quot;https://www.linkedin.com/pulse/spring-ai-recipe-getting-started-withembabel-craig-walls-td5xc/&quot;&gt;recent recipes, this one looking at agentic AI with Embabel&lt;/a&gt; (which builds on Spring AI).&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[MongoDB-backed Spring Batch jobs and more in Spring Boot 4.1]]></title><link>https://spring.io/blog/2026/06/21/spring-boot-41-and-spring-batch</link><guid isPermaLink="true">https://spring.io/blog/2026/06/21/spring-boot-41-and-spring-batch</guid><dc:creator><![CDATA[joshlong]]></dc:creator><pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Spring Batch was introduced many years before MongoDB existed, and its design assumed the presence of a SQL database in which to store the state of Spring Batch jobs.&lt;/p&gt;
+&lt;p&gt;But that was &lt;em&gt;decades&lt;/em&gt; ago, and a common question for anyone new to Spring Batch was, &lt;em&gt;&quot;Why does this thing need to talk to a SQL database?&quot;&lt;/em&gt; The answer, of course, was that Spring Batch keeps a meticulous record of every job, step, and execution in a &lt;code&gt;JobRepository&lt;/code&gt;, and for years that repository spoke one dialect: SQL. If you were happily living in MongoDB-land, you still had to drag a Postgres or MySQL instance along just so Batch could write down what it did last Tuesday.&lt;/p&gt;
+&lt;p&gt;In recent Spring Batch iterations, Spring Batch decoupled its &lt;code&gt;JobRepository&lt;/code&gt; from JDBC, and Spring Boot 4.1 finally puts a bow on the experience with a proper &lt;code&gt;spring-boot-starter-batch-data-mongodb&lt;/code&gt; autoconfiguration. You get the same zero-config Boot experience for your batch metadata that JDBC users have enjoyed since the beginning.&lt;/p&gt;
+&lt;p&gt;Fun fact: Dr. Dave Syer, cofounder of Spring Boot, was the founder and longtime lead of Spring Batch. Naturally, the first autoconfiguration he wrote for Spring Boot was for Spring Batch! So when I say that Spring Boot users have enjoyed JDBC-backed support in Spring Boot since the &lt;em&gt;very beginning&lt;/em&gt;, I mean it!&lt;/p&gt;
+&lt;p&gt;This post walks through a small but complete example. It:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stores the Spring Batch &lt;code&gt;JobRepository&lt;/code&gt; in &lt;strong&gt;MongoDB&lt;/strong&gt; (via the new 4.1 starter).&lt;/li&gt;
+&lt;li&gt;Reads &lt;code&gt;customers.csv&lt;/code&gt; from the classpath.&lt;/li&gt;
+&lt;li&gt;Writes the rows into a &lt;strong&gt;PostgreSQL&lt;/strong&gt; &lt;code&gt;customers&lt;/code&gt; table.&lt;/li&gt;
+&lt;li&gt;Runs everything against services launched by a &lt;code&gt;compose.yaml&lt;/code&gt; in the project root.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;getting-the-infrastructure-up&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-infrastructure-up&quot; aria-label=&quot;getting the infrastructure up permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the infrastructure up&lt;/h2&gt;
+&lt;p&gt;Before we touch a line of Java, spin up the two backing services:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;docker compose up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;compose.yaml&lt;/code&gt; brings up a MongoDB instance configured as a single-node replica set (Batch&apos;s MongoDB support needs transactions, and transactions need a replica set), a PostgreSQL instance for the destination table, and a Grafana LGTM container for observability if you want it later.&lt;/p&gt;
+&lt;p&gt;The job we&apos;ll define is a simple ETL (extraction, transformation, load) job that reads from a &lt;code&gt;customers.csv&lt;/code&gt; file and writes to a table called &lt;code&gt;customers&lt;/code&gt; in a PostgreSQL database.&lt;/p&gt;
+&lt;p&gt;We&apos;ll need to initialize the Postgres &lt;code&gt;customers&lt;/code&gt; table; that&apos;s handled by &lt;code&gt;src/main/resources/schema.sql&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sql&quot;&gt;create table if not exists customers (
+    id    serial primary key,
+    name  varchar(255),
+    email varchar(255)
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Spring Boot&apos;s SQL init (&lt;code&gt;spring.sql.init.mode=always&lt;/code&gt;) runs it on startup. The MongoDB side is similarly self-serve — &lt;code&gt;spring.batch.data.mongodb.schema.initialize=true&lt;/code&gt; tells the new starter to create the collections the &lt;code&gt;JobRepository&lt;/code&gt; needs.&lt;/p&gt;
+&lt;p&gt;The relevant bits of &lt;code&gt;application.properties&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-properties&quot;&gt;spring.mongodb.host=localhost
+spring.mongodb.port=27017
+spring.mongodb.database=mydatabase
+
+spring.batch.data.mongodb.schema.initialize=true
+
+spring.datasource.url=jdbc:postgresql://localhost/mydatabase
+spring.datasource.username=myuser
+spring.datasource.password=secret
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;the-job&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-job&quot; aria-label=&quot;the job permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The job&lt;/h2&gt;
+&lt;p&gt;Our job is called &lt;code&gt;etl&lt;/code&gt;, and it runs two steps in sequence:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean
+Job job(@Qualifier(STEP_RESET) Step stepReset,
+        @Qualifier(STEP_FILES_TO_DB) Step stepFilesToDb) {
+    return new JobBuilder(&quot;etl&quot;, this.repository)
+            .start(stepReset)
+            .next(stepFilesToDb)
+            .incrementer(new RunIdIncrementer())
+            .build();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;First &lt;code&gt;reset&lt;/code&gt; (a tasklet that wipes the destination table), then &lt;code&gt;files-to-db&lt;/code&gt; (the reader ? processor ? writer that actually moves data). The &lt;code&gt;RunIdIncrementer&lt;/code&gt; is a small but important detail: it bumps a &lt;code&gt;run.id&lt;/code&gt; parameter on each launch so that Spring Batch treats every invocation as a new job instance instead of refusing to re-run a &quot;completed&quot; one.&lt;/p&gt;
+&lt;h2 id=&quot;step-one-a-tasklet&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#step-one-a-tasklet&quot; aria-label=&quot;step one a tasklet permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step one: a tasklet&lt;/h2&gt;
+&lt;p&gt;The simplest kind of Spring Batch step is a &lt;code&gt;Tasklet&lt;/code&gt; — a single chunk of work with no notion of reading or writing items. It&apos;s the right tool when you just need to &lt;em&gt;do&lt;/em&gt; something between steps. Here it&apos;s a clean slate:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean(STEP_RESET)
+Step cleanTableStep(JdbcClient db, JobRepository repository) {
+    return new StepBuilder(&quot;reset&quot;, repository)
+            .tasklet((contribution, chunkContext) -&gt; {
+                db.sql(&quot;delete from customers&quot;).update();
+                return RepeatStatus.FINISHED;
+            })
+            .build();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The tasklet runs once, returns &lt;code&gt;RepeatStatus.FINISHED&lt;/code&gt;, and we move on.&lt;/p&gt;
+&lt;h2 id=&quot;step-two-reader-processor-writer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#step-two-reader-processor-writer&quot; aria-label=&quot;step two reader processor writer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Step two: reader, processor, writer&lt;/h2&gt;
+&lt;p&gt;The interesting step is the chunked one. Spring Batch&apos;s bread-and-butter pattern is &lt;em&gt;read an item, process it, accumulate a chunk, write the chunk&lt;/em&gt;. The reader pulls rows out of &lt;code&gt;customers.csv&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean
+FlatFileItemReader&amp;#x3C;Customer&gt; customerFlatFileItemReader(
+        @Value(&quot;classpath:/customers.csv&quot;) Resource csv) {
+    return new FlatFileItemReaderBuilder&amp;#x3C;Customer&gt;()
+            .name(&quot;customer-reader&quot;)
+            .resource(csv)
+            .delimited(c -&gt; c.delimiter(&quot;,&quot;).names(&quot;id&quot;, &quot;name&quot;, &quot;email&quot;))
+            .fieldSetMapper(fs -&gt; new Customer(
+                    fs.readInt(&quot;id&quot;),
+                    fs.readString(&quot;name&quot;),
+                    fs.readString(&quot;email&quot;)))
+            .build();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The CSV itself:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-csv&quot;&gt;id,name,email
+1,josh,josh@joshlong.com
+2,dashaun,dashaun@dashaun.com
+3,james,james@jamesward.dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You get the idea.&lt;/p&gt;
+&lt;p&gt;The writer pushes each chunk into Postgres, using &lt;code&gt;ON CONFLICT DO NOTHING&lt;/code&gt; so reruns don&apos;t blow up on primary-key collisions:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;    @Bean
+    FlatFileItemReader&amp;#x3C;Customer&gt; customerFlatFileItemReader(@Value(&quot;classpath:/customers.csv&quot;) Resource csv) {
+        return new FlatFileItemReaderBuilder&amp;#x3C;Customer&gt;() //
+                .name(&quot;customer-reader&quot;)
+                .resource(csv)
+                .delimited(c -&gt; c.delimiter(&quot;,&quot;).names(&quot;id&quot;, &quot;name&quot;, &quot;email&quot;))
+                .targetType(Customer.class)
+                .build();
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the step itself ties them together with a tiny pass-through processor (a great place to drop transformation, enrichment, or filtering logic later) and a chunk size of 10:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;    @Bean
+    JdbcBatchItemWriter&amp;#x3C;Customer&gt; customerJdbcBatchItemWriter(DataSource dataSource) {
+        return new JdbcBatchItemWriterBuilder&amp;#x3C;Customer&gt;()//
+                .assertUpdates(true)//
+                .dataSource(dataSource)//
+                .sql(&quot;INSERT INTO customers(id, name, email) VALUES (:id, :name, :email) on conflict do nothing&quot;)//
+                .beanMapped()//
+                .itemPreparedStatementSetter((item, ps) -&gt; {
+                    ps.setInt(1, item.id());
+                    ps.setString(2, item.name());
+                    ps.setString(3, item.email());
+                })//
+                .build();
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note the &lt;code&gt;faultTolerant()&lt;/code&gt; switch and the retry policy — Spring Batch will quietly retry items that throw &lt;code&gt;IllegalArgumentException&lt;/code&gt; up to ten times before failing the chunk. It&apos;s a one-liner because the framework is doing all the bookkeeping for you, and that bookkeeping is precisely the thing that now lives in MongoDB.&lt;/p&gt;
+&lt;h2 id=&quot;run-it&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#run-it&quot; aria-label=&quot;run it permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Run it&lt;/h2&gt;
+&lt;p&gt;With Docker Compose up:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;./mvnw spring-boot:run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The job kicks off, &lt;code&gt;reset&lt;/code&gt; clears Postgres, &lt;code&gt;files-to-db&lt;/code&gt; streams the CSV through the chunk pipeline into Postgres, and every step transition, item count, exit status, and execution timestamp gets written to MongoDB. Open up &lt;code&gt;mongosh&lt;/code&gt;, and you&apos;ll see the familiar Batch collections — &lt;code&gt;BATCH_JOB_INSTANCE&lt;/code&gt;, &lt;code&gt;BATCH_JOB_EXECUTION&lt;/code&gt;, &lt;code&gt;BATCH_STEP_EXECUTION&lt;/code&gt; — except they&apos;re documents now, not tables.&lt;/p&gt;
+&lt;h2 id=&quot;observability&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#observability&quot; aria-label=&quot;observability permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Observability&lt;/h2&gt;
+&lt;p&gt;Spring Batch jobs emit a whole bunch of interesting Spring &lt;code&gt;ApplicationEvent&lt;/code&gt;s! I listen for one, &lt;code&gt;JobExecutionEvent&lt;/code&gt;, which gets published whenever a job has finished (successfully or not).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;    @EventListener
+    void after(JobExecutionEvent event) {
+        IO.println(&quot;Job execution #&quot; + event.getJobExecution() + &quot; finished&quot;);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I initialized the program with Spring Initializr, I made sure to add the &lt;code&gt;OpenTelemetry&lt;/code&gt; Spring Boot starter. Spring Boot and Micrometer have long supported OpenTelemetry, but there was always some finagling required. Now, if you&apos;ve got the OpenTelemetry starter on the classpath, it&apos;ll publish metrics to any OpenTelemetry endpoint (the default assumes port &lt;code&gt;3000&lt;/code&gt;). If you choose Docker Compose support on the Spring Initializr, it&apos;ll give you a Grafana configuration that will listen for OpenTelemetry information on port 3000, too!&lt;/p&gt;
+&lt;p&gt;So, run the application, then visit localhost:3000, then click &lt;code&gt;Drilldown&lt;/code&gt;, then &lt;code&gt;Metrics&lt;/code&gt;, and then search for &lt;code&gt;spring_batch&lt;/code&gt; in the search field.&lt;/p&gt;
+&lt;p&gt;Alternatively, you could visit &lt;a href=&quot;http://localhost:8080/actuator/metrics&quot;&gt;http://localhost:8080/actuator/metrics&lt;/a&gt; and see the same metrics. But I like shiny and colorful, so the Grafana page does a lot for me.&lt;/p&gt;
+&lt;h2 id=&quot;bonus-native-images-with-graalvm&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bonus-native-images-with-graalvm&quot; aria-label=&quot;bonus native images with graalvm permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bonus: Native Images with GraalVM&lt;/h2&gt;
+&lt;p&gt;GraalVM native image technology has the potential to reduce overall memory usage. Spring Batch already &lt;em&gt;mostly&lt;/em&gt; works with GraalVM native images, but there are some new classes I needed to account for. And some new schema files.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;    static class Hints implements RuntimeHintsRegistrar {
+
+        @Override
+        public void registerHints(@NonNull RuntimeHints hints, @Nullable ClassLoader classLoader) {
+            for (var c : new Class[]{
+                    org.springframework.batch.core.repository.persistence.JobInstance.class,
+                    org.springframework.batch.core.repository.persistence.ExecutionContext.class,
+                    org.springframework.batch.core.repository.persistence.ExitStatus.class,
+                    org.springframework.batch.core.repository.persistence.StepExecution.class,
+                    org.springframework.batch.core.repository.persistence.JobExecution.class,
+                    org.springframework.batch.core.repository.persistence.JobParameter.class,
+            }) {
+                hints.reflection().registerType(c, MemberCategory.values());
+            }
+
+            var prefix = &quot;org/springframework/batch/core/&quot;;
+            for (var r : new String[]{
+                    &quot;schema-mongodb&quot;, //
+                    &quot;schema-drop-mongodb&quot;}) {
+                for (var suffix : &quot;jsonl,js&quot;.split(&quot;,&quot;)) {
+                    var path = prefix + r + &quot;.&quot; + suffix;
+                    var resource = new ClassPathResource(path);
+                    if (resource.exists()) {
+                        hints.resources().registerResource(resource);
+                    }
+                }
+            }
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And we also need to tell GraalVM about &lt;code&gt;customers.csv&lt;/code&gt; and the &lt;code&gt;Customer&lt;/code&gt; POJO.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;
+    static class ResourceHints implements RuntimeHintsRegistrar {
+
+        @Override
+        public void registerHints(RuntimeHints hints, @Nullable ClassLoader classLoader) {
+            hints.reflection().registerType(Customer.class, MemberCategory.values());
+            hints.resources().registerResource(new ClassPathResource(&quot;/customers.csv&quot;));
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Register both in the usual way by adding this to the &lt;code&gt;BatchConfiguration&lt;/code&gt; class (or any class with &lt;code&gt;@Configuration&lt;/code&gt; on it):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@ImportRuntimeHints({BatchConfiguration.ResourceHints.class, BatchConfiguration.Hints.class})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once this is done you can build a GraalVM native image in the usual way. I&apos;ve written the steps down in the &lt;code&gt;native.sh&lt;/code&gt; script in the root of the repository:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;#!/usr/bin/env bash
+ls -la target &amp;#x26;&amp;#x26; rm -rf target
+./mvnw -DskipTests -Pnative native:compile
+./target/batch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run the application: &lt;code&gt;./target/batch&lt;/code&gt; and observe that it starts up in no time at all and takes considerably less RAM than when run on the JVM. On my machine - an Apple M5 with macOS - it starts up in about a tenth of a second and uses about 150 MB of RAM. Long-running batch jobs aren&apos;t usually the sort of thing that &lt;em&gt;need&lt;/em&gt; fast startup, but the RAM savings is nice and the startup time doesn&apos;t hurt!&lt;/p&gt;
+&lt;h2 id=&quot;lazy-datasource-connections&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lazy-datasource-connections&quot; aria-label=&quot;lazy datasource connections permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lazy DataSource Connections&lt;/h2&gt;
+&lt;p&gt;Another optimization that, in the sweep of things doesn&apos;t change all that much for this particular workload, but which is very nice, is that in Spring Boot 4.1 we now support &lt;em&gt;lazy connection retrieval&lt;/em&gt;. Remember, by default Spring Boot initializes the DataSource and creates a connection whenever a transaction is started &lt;em&gt;even if&lt;/em&gt; there&apos;s no guarantee that you&apos;ll use the connection. You can avoid paying that penalty with the new Spring Boot configuration property &lt;code&gt;spring.datasource.connection-fetch=lazy&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;get-the-bits&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#get-the-bits&quot; aria-label=&quot;get the bits permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get the Bits&lt;/h2&gt;
+&lt;p&gt;As usual, the full code for this example is avaialble online &lt;a href=&quot;https://github.com/coffee-software-show/2026-06-21-boot-41-batch-and-mongodb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;why-this-matters&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#why-this-matters&quot; aria-label=&quot;why this matters permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why this matters&lt;/h2&gt;
+&lt;p&gt;The historical coupling between Spring Batch and a relational database was always a pragmatic compromise, not a design ideal. The framework needs &lt;em&gt;somewhere&lt;/em&gt; durable to remember what it did, and SQL was the path of least resistance. With the &lt;code&gt;JobRepository&lt;/code&gt; abstraction now properly decoupled — and Spring Boot 4.1 shipping first-class autoconfiguration for MongoDB — teams running on document stores no longer have to keep a JDBC database around just to humor the batch tier.&lt;/p&gt;
+&lt;p&gt;Pick the database that fits your data. Spring Batch will fit itself around your choice.&lt;/p&gt;</content:encoded></item></channel></rss>
